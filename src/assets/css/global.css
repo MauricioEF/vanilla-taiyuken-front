@@ -1,13 +1,15 @@
 :root{
-  --primary-color:#3A1078;
-  --secondary-color:#4E31AA;
-  --link-color:#2F58CD;
-  --highlight-color:#3795BD;
+  --primary-color:#F2DC62;
+  --secondary-color:#3D348B;
+  --accent-color:#FF3C38;
+  --text-color:#F8F8F8;
+  --background:#0B0F26;
 }
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: var(--background);
   }
 
   #navbar-container {
