@@ -1,3 +1,69 @@
-body{
-    background-color: blueviolet;
+.members {
+    display: flex;
+    width: 97%;
+    height: 500px;
+    margin: auto;
+}
+
+.members button {
+    border: 0;
+    color: rgb(206, 228, 228);
+    background-color: rgb(36, 34, 34);
+    border-radius: 16px;
+    padding-left: 10px;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+
+    transition: background-color 0.3s;
+}
+
+.members button:active {
+    background-color: #141414;
+}
+
+.members button:hover {
+    background-color: rgb(54, 53, 53);
+}
+
+.members button.clicked {
+    background-color: #535353;
+    cursor: default;
+}
+
+.col1 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    background: #0B0F26;
+}
+
+.centerMembers {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.col2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(212, 198, 188);
+}
+
+.tagsMember {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
 }
