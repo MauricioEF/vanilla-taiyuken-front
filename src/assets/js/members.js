@@ -66,7 +66,6 @@ let favoriteGameH3 = document.getElementById("favoritGame");
 
 
 
-
 const buttons = document.querySelectorAll('.button');
 buttons.forEach(currentButton => {
   currentButton.addEventListener('click', () => {
@@ -77,83 +76,17 @@ buttons.forEach(currentButton => {
 
     currentButton.disabled = true;
     currentButton.classList.add('clicked');
+
+    const memberId = currentButton.id;
+    const memberData = members[memberId];
+
+    if (memberData) {
+      nameH1.innerHTML = memberData.name;
+      plataformH3.innerHTML = memberData.platforms;
+      ageH3.innerHTML = memberData.age;
+      descriptionH4.innerHTML = memberData.description;
+      favoriteGameH3.innerHTML = memberData.favoriteGame;
+    }
   });
 });
 
-
-
-
-
-let buttonMomo = document.getElementById("momo");
-buttonMomo.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.momo.name;
-    plataformH3.innerHTML = members.momo.platforms;
-    ageH3.innerHTML = members.momo.age;
-    descriptionH4.innerHTML = members.momo.description;
-    favoriteGameH3.innerHTML = members.momo.favoriteGame;
-
-})
-
-let buttonDau = document.getElementById("dau");
-buttonDau.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.dau.name;
-    plataformH3.innerHTML = members.dau.platforms;
-    ageH3.innerHTML = members.dau.age;
-    descriptionH4.innerHTML = members.dau.description;
-    favoriteGameH3.innerHTML = members.dau.favoriteGame;
-
-})
-
-let buttonJefeUri = document.getElementById("jefeUri");
-buttonJefeUri.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.jefeUri.name;
-    plataformH3.innerHTML = members.jefeUri.platforms;
-    ageH3.innerHTML = members.jefeUri.age;
-    descriptionH4.innerHTML = members.jefeUri.description;
-    favoriteGameH3.innerHTML = members.jefeUri.favoriteGame;
-})
-
-let buttonAxol = document.getElementById("axol");
-buttonAxol.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.axol.name;
-    plataformH3.innerHTML = members.axol.platforms;
-    ageH3.innerHTML = members.axol.age;
-    descriptionH4.innerHTML = members.axol.description;
-    favoriteGameH3.innerHTML = members.axol.favoriteGame;
-})
-
-let buttonYoking = document.getElementById("yoking");
-buttonYoking.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.yoking.name;
-    plataformH3.innerHTML = members.yoking.platforms;
-    ageH3.innerHTML = members.yoking.age;
-    descriptionH4.innerHTML = members.yoking.description;
-    favoriteGameH3.innerHTML = members.yoking.favoriteGame;
-})
-
-let buttonChino = document.getElementById("chino");
-buttonChino.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.chino.name;
-    plataformH3.innerHTML = members.chino.platforms;
-    ageH3.innerHTML = members.chino.age;
-    descriptionH4.innerHTML = members.chino.description;
-    favoriteGameH3.innerHTML = members.chino.favoriteGame;
-})
-
-let buttonYisus = document.getElementById("yisus");
-buttonYisus.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.yisus.name;
-    plataformH3.innerHTML = members.yisus.platforms;
-    ageH3.innerHTML = members.yisus.age;
-    descriptionH4.innerHTML = members.yisus.description;
-    favoriteGameH3.innerHTML = members.yisus.favoriteGame;
-})
-
-let buttonTeacher = document.getElementById("teacher");
-buttonTeacher.addEventListener('click', (event) => {
-    nameH1.innerHTML = members.teacher.name;
-    plataformH3.innerHTML = members.teacher.platforms;
-    ageH3.innerHTML = members.teacher.age;
-    descriptionH4.innerHTML = members.teacher.description;
-    favoriteGameH3.innerHTML = members.teacher.favoriteGame;
-})
