@@ -39,11 +39,11 @@
 
   /*Font specific sizes*/
   .text-sm {
-    font-size: --var(--font-sm);
+    font-size: var(--font-sm);
   }
 
   .text-xs {
-    font-size: --var(--font-xs);
+    font-size: var(--font-xs);
   }
 
   /*Component Styles*/
