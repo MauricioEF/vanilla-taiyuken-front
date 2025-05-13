@@ -59,10 +59,10 @@ const members = {
 };
 
 let nameH1 = document.getElementById("name");
-let plataformH3 = document.getElementById("plataform");
+let platformH3 = document.getElementById("platform");
 let ageH3 = document.getElementById("age");
 let descriptionH4 = document.getElementById("description");
-let favoriteGameH3 = document.getElementById("favoritGame");
+let favoriteGameH3 = document.getElementById("favoriteGame");
 
 
 
@@ -82,7 +82,7 @@ buttons.forEach(currentButton => {
 
     if (memberData) {
       nameH1.innerHTML = memberData.name;
-      plataformH3.innerHTML = memberData.platforms;
+      platformH3.innerHTML = memberData.platforms;
       ageH3.innerHTML = memberData.age;
       descriptionH4.innerHTML = memberData.description;
       favoriteGameH3.innerHTML = memberData.favoriteGame;
