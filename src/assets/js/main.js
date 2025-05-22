@@ -29,3 +29,5 @@ async function loadComponent(id, name) {
       await loadComponent(el.id || name + '-container', name);
     }
   });
+
+  console.log(window.env);

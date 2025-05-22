@@ -23,6 +23,10 @@ jobs:
       - name: 🚀 Run build
         run: ./build.sh
 
+      - name: Inject environment config
+        run: |
+          sed "s|__API_BASE_URL__|${{ secrets.API_BASE_URL }}|g" src/config.template.js > public/config.js
+
       - name: 📦 Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
