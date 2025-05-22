@@ -25,7 +25,6 @@ for file in src/pages/*.html; do
 done
 
 
-
 echo "🎨 Copying assets (CSS/JS)..."
 cp -r src/assets/css/* public/assets/css/
 cp -r src/assets/js/* public/assets/js/
