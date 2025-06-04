@@ -30,4 +30,3 @@ async function loadComponent(id, name) {
     }
   });
 
-  console.log(window.env);
