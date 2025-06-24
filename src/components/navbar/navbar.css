@@ -2,16 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background: #111;
-    color: white;
+    color: var(--accent-cyan)
   }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-  }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+.logo{
+  width:80px;
+  height:80px;
+  border-radius: 50%;
+}
