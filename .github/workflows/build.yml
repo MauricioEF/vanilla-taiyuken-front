@@ -26,7 +26,7 @@ jobs:
       - name: Inject environment config
         run: |
           sed "s|__API_BASE_URL__|${{ secrets.API_BASE_URL }}|g" src/config.template.js > public/config.js
-          sed "s|CLOUD_IMAGE_URL|${{ secrets.CLOUD_IMAGE_URL }}|g" src/config.template.js > public/config.js
+          sed "s|__CLOUD_IMAGE_URL__|${{ secrets.CLOUD_IMAGE_URL }}|g" src/config.template.js > public/config.js
       - name: 📦 Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
